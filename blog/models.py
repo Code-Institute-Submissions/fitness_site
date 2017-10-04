@@ -1,9 +1,11 @@
 from django.db import models
 from django.utils import timezone
+from fitness_project import settings
 
 
 class Post(models.Model):
-    author = models.ForeignKey('auth.User')
+    author = models.ForeignKey('auth.User', related_name='User')
+    #author = models.ForeignKey(settings.AUTH_USER_MODEL)
     title = models.CharField(max_length=200)
     text = models.TextField()
     created_date = models.DateTimeField(
