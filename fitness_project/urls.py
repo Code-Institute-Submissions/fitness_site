@@ -20,10 +20,8 @@ from hello import views as hello_views
 from accounts import views as accounts_views
 
 
-
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'', include('blog.urls')),
     url(r'^$', views.get_index, name='index'),
     url(r'^blog/', include('blog.urls')),
     url(r'^about/$', hello_views.about),
@@ -32,4 +30,5 @@ urlpatterns = [
     url(r'^profile/$', accounts_views.profile, name='profile'),
     url(r'^login/$', accounts_views.login, name='login'),
     url(r'^logout/$', accounts_views.logout, name='logout'),
+
 ]
