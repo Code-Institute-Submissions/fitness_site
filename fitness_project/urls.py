@@ -25,10 +25,11 @@ urlpatterns = [
     url(r'^$', views.get_index, name='index'),
     url(r'^blog/', include('blog.urls')),
     url(r'^about/$', hello_views.about),
-    url(r'^home/$', hello_views.home),
+    url(r'^home/$', views.get_index, name='index'),
     url(r'^register/$', accounts_views.register, name='register'),
     url(r'^profile/$', accounts_views.profile, name='profile'),
     url(r'^login/$', accounts_views.login, name='login'),
     url(r'^logout/$', accounts_views.logout, name='logout'),
+    url(r'^membership/$', accounts_views.register,  name='register'),
 
 ]

@@ -1,0 +1,231 @@
+.jumbotron{
+    margin:0;
+    border: 0;
+    padding: 0;
+    height: 700px;
+}
+
+.jumb-header{
+    padding: 250px;
+    color: white;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: lighter;
+
+
+}
+html body{
+    margin:auto;
+
+}
+
+.container-fluid{
+    margin: auto;
+    width: 100%;
+
+}
+
+.header{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+
+}
+
+.fitness-tracking{
+    background-color: lightgrey;
+    padding: 100px;
+    font-family: 'Noto Sans', sans-serif;
+
+}
+
+.blog-link{
+    background-color: darkslategrey;
+    padding: 200px;
+    font-family: 'Noto Sans', sans-serif;
+
+}
+
+.membership-link{
+    background-image: url("/static/css/chrissie.jpg");
+    background-size: 100%;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 30px;
+    padding: 100px;
+    opacity: 1;
+}
+
+.button-membership {
+    color: black;
+    border: 3px solid black;
+    font-size: 20px;
+    background-color: transparent;
+
+}
+
+.footer-social{
+    background-color: whitesmoke;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 10px;
+    color: gray;
+
+}
+
+/* NAVIGATION AND HEADING */
+
+.navbar{
+    position:fixed;
+    z-index: 100;
+    border: none;
+    width: 100%;
+    background-color: transparent;
+
+}
+
+.nav ul li{
+    list-style:none;
+    text-decoration:none;
+    position: fixed;
+    width: 100%;
+    background-color: transparent;
+    border: 0;
+    color: orange;
+
+    }
+
+
+.heading {
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 800;
+    font-size: 60px;
+    opacity: 0.8;
+    border: 0;
+    padding-right: 100px;
+     animation-duration: 5s;
+  	 animation-name: explode;
+  	 animation-timing-function: ease;
+     animation-fill-mode: forwards;
+     text-transform: uppercase;
+    float:left;
+
+}
+
+a{
+    font-family: 'Noto Sans', sans-serif;
+    color: grey;
+    font-size: 15px;
+    opacity: 0.8;
+}
+
+li{
+    padding-top: 10px;
+}
+
+body {
+  animation-duration: 10s;
+  animation-name: bganimate;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+}
+
+@keyframes explode {
+  0% {
+    font-size: 10%;
+    opacity: 0;
+    color: grey;
+  }
+
+    50%{
+        opacity: 1;
+        color: darkgrayy;
+    }
+  100% {
+    font-size: 4em;
+    opacity: 0;
+      color: grey;
+
+  }
+}
+
+}
+@keyframes bganimate {
+    0% {
+            background-color: transparent;
+
+    }
+    100% {
+            background-color: transparent;
+
+    }
+}
+
+/* Home PAGE */
+
+      .container_one {
+        position: relative;
+        font-size: 0;
+        border-radius: 10px;
+          width: 50%;
+          display: inline-block;
+          padding-left: 400px;
+
+
+    }
+
+      .container_two {
+        position: relative;
+        font-size: 0;
+          width: 50%;
+        border-radius: 10px;
+          display: inline-block;
+          padding-right: 400px;
+
+
+    }
+	  .box {
+	  	position: relative;
+	    width: 100%;
+	    font-size: 10px;
+          color: darkgray;
+        font-family: 'Noto Sans', sans-serif;
+	    text-align: center;
+
+	}
+    .box:hover{
+
+  	  transform: perspective(790px) rotateY(36deg);
+  	  transition: 10s, ease-in-out;
+  	}
+
+	 .sidebar {
+         -webkit-box-sizing: border-box;
+         -moz-box-sizing: border-box;
+         box-sizing: border-box;
+         padding: 50px;
+         background-color: darkslategrey;
+
+     }
+
+      .content {
+         -webkit-box-sizing: border-box;
+         -moz-box-sizing: border-box;
+         box-sizing: border-box;
+          padding: 50px;
+          background-color: white;
+     }
+
+       .sidebar1 {
+         -webkit-box-sizing: border-box;
+         -moz-box-sizing: border-box;
+         box-sizing: border-box;
+         padding: 50px;
+           background-color: mintcream;
+
+     }
+
+      .content1 {
+         -webkit-box-sizing: border-box;
+         -moz-box-sizing: border-box;
+         box-sizing: border-box;
+          padding: 50px;
+          background-color: indianred;
+     }
