@@ -33,7 +33,7 @@ html body{
 
 .fitness-tracking{
     background-color: lightgrey;
-    padding: 100px;
+    padding: 150px;
     font-family: 'Noto Sans', sans-serif;
 
 }
@@ -200,8 +200,10 @@ body {
          -webkit-box-sizing: border-box;
          -moz-box-sizing: border-box;
          box-sizing: border-box;
-         padding: 50px;
+         padding: auto;
          background-color: darkslategrey;
+         height: 100px;
+
 
      }
 
@@ -209,16 +211,20 @@ body {
          -webkit-box-sizing: border-box;
          -moz-box-sizing: border-box;
          box-sizing: border-box;
-          padding: 50px;
+          padding: auto;
           background-color: white;
+          height: 100px;
+
      }
 
        .sidebar1 {
          -webkit-box-sizing: border-box;
          -moz-box-sizing: border-box;
          box-sizing: border-box;
-         padding: 50px;
+         padding: auto;
            background-color: mintcream;
+           height: 100px;
+
 
      }
 
@@ -226,6 +232,8 @@ body {
          -webkit-box-sizing: border-box;
          -moz-box-sizing: border-box;
          box-sizing: border-box;
-          padding: 50px;
+          padding: auto;
           background-color: indianred;
+          height: 100px;
+
      }

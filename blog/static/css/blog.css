@@ -32,7 +32,10 @@
 }
 
 .post h1 a, .post h1 a:visited {
-    color: white;
+    color: darkred;
+    font-family: 'raleway', 'sans-serif';
+    font-size: 50pt;
+
 }
 
 .form-container{
@@ -43,4 +46,8 @@
 .form-group{
     width: 50%;
 
+}
+
+.content{
+    padding: 80px;
 }

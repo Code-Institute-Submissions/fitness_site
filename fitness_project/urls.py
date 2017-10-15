@@ -18,6 +18,8 @@ from django.contrib import admin
 from hello import views
 from hello import views as hello_views
 from accounts import views as accounts_views
+from membership import views as membership_views
+
 
 
 urlpatterns = [
@@ -30,6 +32,7 @@ urlpatterns = [
     url(r'^profile/$', accounts_views.profile, name='profile'),
     url(r'^login/$', accounts_views.login, name='login'),
     url(r'^logout/$', accounts_views.logout, name='logout'),
-    url(r'^membership/$', accounts_views.register,  name='register'),
+    url(r'^membership/$', membership_views.all_products),
 
 ]
+
