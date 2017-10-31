@@ -13,6 +13,9 @@
 
 
 }
+
+
+
 html body{
     margin:auto;
 
@@ -32,20 +35,21 @@ html body{
 }
 
 .fitness-tracking{
-    background-color: lightgrey;
+    background-color: #1F213B;
     padding: 150px;
     font-family: 'Noto Sans', sans-serif;
 
 }
 
 .blog-link{
-    background-color: darkslategrey;
+    background-color: white;
     padding: 200px;
     font-family: 'Noto Sans', sans-serif;
 
 }
 
 .membership-link{
+    color: white;
     background-image: url("/static/css/chrissie.jpg");
     background-size: 100%;
     font-family: 'Noto Sans', sans-serif;
@@ -111,7 +115,6 @@ html body{
 
 a{
     font-family: 'Noto Sans', sans-serif;
-    color: grey;
     font-size: 15px;
     opacity: 0.8;
 }
@@ -174,18 +177,20 @@ body {
       .container_two {
         position: relative;
         font-size: 0;
-          width: 50%;
+          width: 100%;
         border-radius: 10px;
           display: inline-block;
           padding-right: 400px;
 
-
+.row{
+    padding: auto;
+    margin: 20px;
+}
     }
 	  .box {
 	  	position: relative;
-	    width: 100%;
 	    font-size: 10px;
-          color: darkgray;
+          color: white;
         font-family: 'Noto Sans', sans-serif;
 	    text-align: center;
 
@@ -196,44 +201,4 @@ body {
   	  transition: 10s, ease-in-out;
   	}
 
-	 .sidebar {
-         -webkit-box-sizing: border-box;
-         -moz-box-sizing: border-box;
-         box-sizing: border-box;
-         padding: auto;
-         background-color: darkslategrey;
-         height: 100px;
 
-
-     }
-
-      .content {
-         -webkit-box-sizing: border-box;
-         -moz-box-sizing: border-box;
-         box-sizing: border-box;
-          padding: auto;
-          background-color: white;
-          height: 100px;
-
-     }
-
-       .sidebar1 {
-         -webkit-box-sizing: border-box;
-         -moz-box-sizing: border-box;
-         box-sizing: border-box;
-         padding: auto;
-           background-color: mintcream;
-           height: 100px;
-
-
-     }
-
-      .content1 {
-         -webkit-box-sizing: border-box;
-         -moz-box-sizing: border-box;
-         box-sizing: border-box;
-          padding: auto;
-          background-color: indianred;
-          height: 100px;
-
-     }
