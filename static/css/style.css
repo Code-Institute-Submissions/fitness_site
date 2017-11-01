@@ -1,3 +1,16 @@
+a {
+     background-color: transparent;
+   font-size: 30px;
+    color: white;
+    text-decoration: none;
+
+
+}
+
+.nav>li>a:hover, .nav>li>a:focus {
+    background-color: transparent;
+}
+
 .jumbotron{
     margin:0;
     border: 0;
