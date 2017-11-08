@@ -1,3 +1,6 @@
+body{
+    background-color: black;
+}
 .page-header {
     margin-top: 0;
     opacity: 0.5;

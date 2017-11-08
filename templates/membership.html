@@ -3,23 +3,13 @@
 
         <tbody>
 
-    <div class="row">
-        <div class="col-md-4">
-        <div class="col-md-4">
-        <div class="col-md-4">
-
-        </div>
-        </div>
-        </div>
-    </div>
-
 
             {% for product in products %}
-                <tr>
-                    <td>{{ product.name }}</td>
-                    <td>{{ product.description }}</td>
-                    <td>${{ product.price }}</td>
-                    <td><form action="/payment-accepted/" method="POST">
+                <div class="membership-box col-md-4 col-sm-4">
+                    <h1>{{ product.name }}</h1>
+                    <p>{{ product.description }}</p>
+                    <h2>${{ product.price }}</h2>
+                    <form action="/payment-accepted/" method="POST">
 
  {%csrf_token%}
                 <script
@@ -33,8 +23,8 @@
                     data-zip-code="true"
                     data-currency="gbp">
                 </script>
-                    </form></td>
-                </tr>
+                    </form>
+                </div>
             {% endfor %}
         </tbody>
 

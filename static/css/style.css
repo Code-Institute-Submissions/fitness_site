@@ -7,6 +7,13 @@ a {
 
 }
 
+.fusion {
+    color: blueviolet;
+    float: right;
+        opacity: 0.3;
+
+}
+
 .nav>li>a:hover, .nav>li>a:focus {
     background-color: transparent;
 }
@@ -46,17 +53,58 @@ html body{
     padding: 0;
 
 }
+.row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+}
+.signup {
+    background-color: white;
+    color: darkslategrey;
+    padding: 50px;
+
+}
+
+.signup1{
+    background-color:white;
+    padding: 50px;
+
+}
+
+.signup2{
+    background-color:paleturquoise;
+    padding: 50px;
+    text-align: center;
+
+}
 
 .fitness-tracking{
-    background-color: #1F213B;
-    padding: 150px;
+    background-color: black
     font-family: 'Noto Sans', sans-serif;
 
 }
 
-.blog-link{
+.sidebar{
+    padding: 10px;
+    background-color: black;
+
+}
+.sidebar1{
+        padding: 10px;
+    background-color: paleturquoise;
+}
+.sidebar2{
+        padding: 10px;
     background-color: white;
-    padding: 200px;
+    color: darkgray;
+}
+
+
+.blog-link{
+    background-color: darkslategrey;
+    padding: 70px;
     font-family: 'Noto Sans', sans-serif;
 
 }
@@ -213,5 +261,21 @@ body {
   	  transform: perspective(790px) rotateY(36deg);
   	  transition: 10s, ease-in-out;
   	}
+
+/* Membership Page */
+.membership-box{
+    border-radius: 25px;
+    border: 1px solid white;
+    width: 300px;
+    height: 450px;
+    background-color: paleturquoise;
+    margin-top: 200px;
+    margin-left: 70px;
+    margin-right: 70px;
+    margin-bottom: 90px;
+    box-sizing: border-box;
+    padding: 60px;
+
+}
 
 
