@@ -8,15 +8,12 @@ body{
     color: white;
 }
 
-.page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active {
-    color: white;
-    font-size: 36pt;
-    text-decoration: none;
-    font-family: 'raleway', 'sans-serif';
-}
+
 
 .date {
-    color: turquoise;
+    color: white;
+    opacity: 0.2;
+    font-size: 13px;
 }
 
 .save {
@@ -31,13 +28,19 @@ body{
 }
 
 .post {
-    margin-bottom: 70px;
+
+    padding: 30px;
+    border: solid whitesmoke 1px;
+    margin: 70px;
 }
 
+
 .post h1 a, .post h1 a:visited {
-    color: darkred;
+    color: paleturquoise;
+    text-decoration: none;
     font-family: 'raleway', 'sans-serif';
-    font-size: 50pt;
+    font-size: 30px;
+    font-weight: 100;
 
 }
 
@@ -53,4 +56,12 @@ body{
 
 .content{
     padding: 80px;
+    font-size: 17px;
+    font-weight: 100;
+    color: white;
+    opacity: 0.8;
+}
+
+blog-container{
+    padding: 0px 100px 0px 100px;
 }

@@ -1,11 +1,19 @@
 {% extends "base.html" %}
 {% block content %}
+   <tbody>
 
-        <tbody>
-
+    <div class = "memb-header">
+    <div class="row">
+        <div class = "col-md-12">
+        <h2 class="memb-head"> FUSION MEMBERSHIP </h2>
+    <p>At Fusion, we offer memberships to suit those on a budget and those who want everything taken care of. What’s more, we won’t tie you in to a long term contract, giving you greater flexibility. </p>
+    </div>
+    </div>
+   </div>
 
             {% for product in products %}
-                <div class="membership-box col-md-4 col-sm-4">
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                <div class="membership-box">
                     <h1>{{ product.name }}</h1>
                     <p>{{ product.description }}</p>
                     <h2>${{ product.price }}</h2>
@@ -24,6 +32,7 @@
                     data-currency="gbp">
                 </script>
                     </form>
+                </div>
                 </div>
             {% endfor %}
         </tbody>

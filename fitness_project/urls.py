@@ -26,7 +26,6 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$', views.get_index, name='index'),
     url(r'^blog/', include('blog.urls')),
-    url(r'^about/$', hello_views.about),
     url(r'^home/$', views.get_index, name='index'),
     url(r'^register/$', accounts_views.register, name='register'),
     url(r'^profile/$', accounts_views.profile, name='profile'),

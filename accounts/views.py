@@ -37,7 +37,6 @@ def register(request):
             except stripe.error.CardError, e:
                 messages.error(request, "Your card was declined!")
     else:
-        today = datetime.date.today()
         form = UserRegistrationForm()
 
     args = {'form': form, 'publishable': settings.STRIPE_PUBLISHABLE}
