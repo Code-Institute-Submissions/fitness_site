@@ -6,17 +6,18 @@
         <meta name="description" content="">
         <meta name="author" content="">
         <title>Fusion Fitness</title>
+        <script   src="https://code.jquery.com/jquery-3.2.1.min.js"   integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="   crossorigin="anonymous"></script>
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <link rel="stylesheet" href="{% static 'css/blog.css' %}">
         <link rel="stylesheet" href="{% static 'css/style.css' %}">
+        <script src="{%   static 'js/modal.js' %}"></script>
         <link href="https://fonts.googleapis.com/css?family=Noto+Sans:700|Raleway" rel="stylesheet">
         {% block head_js %}{% endblock %}
 
     </head>
     <body>
-
-
 
 
     <div class="container navbar">
@@ -27,7 +28,6 @@
            <li><a href="/blog/">BLOG</a></li>
            <li><a href="/membership/">MEMBERSHIP</a></li>
             {% if user.is_authenticated %}
-                <li><a href="{% url 'profile' %}">PROFILE</a></li>
                 <li><a href="{% url 'logout' %}">LOG OUT</a></li>
             {% else %}
                 <li><a href="{% url 'register' %}">REGISTER</a></li>
@@ -40,6 +40,8 @@
 
         </ul>
    </div>
+    </div>
+
     {% if messages %}
         <div class="alert alert-success">
             <div class="messages">
@@ -51,15 +53,8 @@
     {% endif %}
 
 
-</div>
-
-    </div>
-
             {% block content %}
             {% endblock %}
-            </div>
-        </div>
-
 
 </body>
 

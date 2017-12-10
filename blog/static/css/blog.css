@@ -8,12 +8,12 @@ body{
     color: white;
 }
 
-
-
 .date {
-    color: white;
-    opacity: 0.2;
+    color: deepskyblue;
+    opacity: 0.5;
     font-size: 13px;
+    padding: 20px 20px 10px 20px;
+
 }
 
 .save {
@@ -30,18 +30,26 @@ body{
 .post {
 
     padding: 30px;
-    border: solid whitesmoke 1px;
-    margin: 70px;
+    margin: 40px;
 }
 
 
 .post h1 a, .post h1 a:visited {
-    color: paleturquoise;
+    color: orange;
     text-decoration: none;
-    font-family: 'raleway', 'sans-serif';
     font-size: 30px;
     font-weight: 100;
 
+}
+
+.post-text{
+    color: whitesmoke;
+}
+
+.post-form{
+    padding: 200px;
+    height: 100px;
+    width: 200px;
 }
 
 .form-container{
@@ -50,18 +58,52 @@ body{
 }
 
 .form-group{
-    width: 50%;
+    width: 400px;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
 
 }
 
-.content{
-    padding: 80px;
-    font-size: 17px;
+
+.blog-img{
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+}
+
+.blog-detail-img{
+width: 50%;
+}
+
+.post{
+    margin: 20px;
+    padding: 20px;
+}
+
+.title-detail{
+    padding: 50px;
+    color: ghostwhite;
     font-weight: 100;
-    color: white;
-    opacity: 0.8;
+
 }
 
-blog-container{
-    padding: 0px 100px 0px 100px;
+.blog-button{
+    margin: 50px;
+}
+
+.blog-container{
+    padding: 100px;
+}
+.text-detail{
+    padding: 0 20px 40px 40px;
+    color: ghostwhite;
+
 }
