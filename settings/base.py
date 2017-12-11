@@ -8,7 +8,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/1.11/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'u&q4j9ub)1@7(55$3rhb4co*^@uqeha4c^65tqgtrbdxf0%wwk'
+SECRET_KEY = os.environ.get("SECRET_KEY")
 
 
 ALLOWED_HOSTS = ['127.0.0.1', 'localhost', 'fusion-fitness.herokuapp.com']
