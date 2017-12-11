@@ -2,7 +2,7 @@
 from __future__ import unicode_literals
 
 from django.test import TestCase
-from hello.views import get_index
+from hello.views import get_index, about
 from django.core.urlresolvers import resolve
 
 class HomePageTest(TestCase):
@@ -10,4 +10,9 @@ class HomePageTest(TestCase):
         home_page = resolve('/')
         self.assertEqual(home_page.func, get_index)
 
-# Create your tests here.
+
+class AboutPageTest(TestCase):
+    def test_about_page_resolves(self):
+        about_page = resolve('/about')
+        self.assertEqual(about_page.func, about)
+

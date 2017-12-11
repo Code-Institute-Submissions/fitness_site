@@ -9,8 +9,10 @@ def get_index(request):
     # this is your new view
    return render(request, 'index.html')
 
+
 def about(request):
     return render(request, 'about.html')
+
 
 def home(request):
 
