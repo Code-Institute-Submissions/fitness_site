@@ -20,7 +20,6 @@ from hello import views as hello_views
 from accounts import views as accounts_views
 from membership import views as membership_views
 from django.views.static import serve
-from .settings import MEDIA_ROOT
 
 
 
