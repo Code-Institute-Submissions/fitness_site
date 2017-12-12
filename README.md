@@ -1,4 +1,6 @@
 # fitness_site
+
+fusion-fitness.herokuapp.com
  
 ### Objectives
 
@@ -6,7 +8,7 @@ Build a web app that fulfils a real world purpose. It should be composed of mult
 
  ### What does it do?
  
-It allows users to register and login to the fitness site in order to access the forum and member benefits. It also allows users to book one of three membership options to use gym facilities. A blog and content throughout offer information on the services. 
+It allows users to register and login to the fitness site in order to access member benefits. These benefits include booking one of three membership options. The site has a blog, which users can make changes to and some JavaScript features, such as a modal on the home page. 
  
 ### How does it work
  
@@ -29,18 +31,6 @@ This website uses Django as a framework and is styled using Bootstrap.
 
 ## Testing
 
-### Getting the code up and running
-1. Firstly you will need to clone this repository by running the ```git clone <project's Github URL>``` command
-2. After you've that you'll need to make sure that you have **npm** and **bower** installed
-  1. You can get **npm** by installing Node from [here](https://nodejs.org/en/)
-  2. Once you've done this you'll need to run the following command:
-     `npm install -g bower # this may require sudo on Mac/Linux`
-3. Once **npm** and **bower** are installed, you'll need to install all of the dependencies in *package.json* and *bower.json*
-  ```
-  npm install
- 
-  bower install
-  ```
-4. After those dependencies have been installed you'll need to make sure that you have **http-server** installed. You can install this by running the following: ```npm install -g http-server # this also may require sudo on Mac/Linux```
-5. Once **http-server** is installed run ```http-server```
-6. The project will now run on [localhost](http://127.0.0.1:8080)
+## Extras
+
+Given more time on this project, I would style the stripe payment section and create the option for users to directly call instructors when logging in via mobile.
