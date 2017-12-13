@@ -127,6 +127,7 @@ body {
 }
 
 .jumb-header {
+    padding: 250px;
     color: paleturquoise;
     font-family: 'Noto Sans', sans-serif;
     font-weight: lighter;
