@@ -109,7 +109,7 @@ body {
 .fusion {
     color: paleturquoise;
     opacity: 0.6;
-    font-size: 300px;
+
 
 }
 
@@ -175,7 +175,6 @@ html body {
 
     background-color: white;
     color: darkslategrey;
-    padding: 50px;
     text-align: center;
 
 }
@@ -183,7 +182,6 @@ html body {
 .signup1 {
 
     background-color: white;
-    padding: 50px;
     text-align: center;
 
 }
@@ -191,7 +189,6 @@ html body {
 .signup2 {
 
     background-color: paleturquoise;
-    padding: 50px;
     text-align: center;
 
 }
