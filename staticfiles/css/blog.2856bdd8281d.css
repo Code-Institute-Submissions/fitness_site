@@ -1,0 +1,109 @@
+body{
+    background-color: black;
+}
+.page-header {
+    margin-top: 0;
+    opacity: 0.5;
+    background-color: red;
+    color: white;
+}
+
+.date {
+    color: deepskyblue;
+    opacity: 0.5;
+    font-size: 13px;
+    padding: 20px 20px 10px 20px;
+
+}
+
+.save {
+    float: right;
+}
+
+.top-menu, .top-menu:hover, .top-menu:visited {
+    color: #ffffff;
+    float: right;
+    font-size: 26pt;
+    font-family: 'raleway', 'sans-serif';
+}
+
+.post {
+
+    padding: 30px;
+    margin: 40px;
+}
+
+
+.post h1 a, .post h1 a:visited {
+    color: orange;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 100;
+
+}
+
+.post-text{
+    color: whitesmoke;
+}
+
+.post-form{
+    padding: 200px;
+    height: 100px;
+    width: 200px;
+}
+
+.form-container{
+    margin-top: 100px;
+    padding: 200px;
+}
+
+.form-group{
+    width: 400px;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+
+}
+
+
+.blog-img{
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+}
+
+.blog-detail-img{
+width: 50%;
+}
+
+.post{
+    margin: 20px;
+    padding: 20px;
+}
+
+.title-detail{
+    padding: 50px;
+    color: ghostwhite;
+    font-weight: 100;
+
+}
+
+.blog-button{
+    margin: 50px;
+}
+
+.blog-container{
+    padding: 100px;
+}
+.text-detail{
+    padding: 0 20px 40px 40px;
+    color: ghostwhite;
+
+}
