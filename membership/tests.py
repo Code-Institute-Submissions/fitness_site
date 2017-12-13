@@ -14,4 +14,6 @@ class ProductPageTest(TestCase):
                                                                Product.objects.all()}).content
         self.assertEqual(subject_page.content, subject_page_template_output)
 
+
+
 # Create your tests here.

@@ -4,6 +4,8 @@ DEBUG = True
 
 INSTALLED_APPS.append('debug_toolbar')
 
+SECRET_KEY = "387asdfjk863gsj8"
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
