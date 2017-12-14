@@ -16,10 +16,8 @@ Including another URLconf
 from django.conf.urls import include, url
 from django.contrib import admin
 from hello import views
-from hello import views as hello_views
 from accounts import views as accounts_views
 from membership import views as membership_views
-from django.views.static import serve
 from django.conf import settings
 from django.conf.urls.static import static
 
@@ -36,7 +34,6 @@ urlpatterns = [
     url(r'^login/$', accounts_views.login, name='login'),
     url(r'^logout/$', accounts_views.logout, name='logout'),
     url(r'^membership/$', membership_views.all_products),
-    #url(r'^images/(?P<path>.*)$', serve, {'document_root': MEDIA_ROOT}),
 
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 

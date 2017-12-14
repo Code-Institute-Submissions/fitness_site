@@ -1,33 +1,33 @@
 {% load staticfiles %}
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="">
-        <meta name="author" content="">
-        <title>Fusion Fitness</title>
-        <script   src="https://code.jquery.com/jquery-3.2.1.min.js"   integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="   crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-        <link rel="stylesheet" href="{% static 'css/blog.css' %}">
-        <link rel="stylesheet" href="{% static 'css/style.css' %}">
-        <script src="{%   static 'js/modal.js' %}"></script>
-        <link href="https://fonts.googleapis.com/css?family=Noto+Sans:700|Raleway" rel="stylesheet">
-        {% block head_js %}{% endblock %}
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Fusion Fitness</title>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+            integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <script src="{% static 'js/modal.js' %}"></script>
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans:700|Raleway" rel="stylesheet">
+    {% block head_js %}{% endblock %}
 
-    </head>
-    <body>
+</head>
+<body>
 
 
-    <div class="container navbar">
-   <div class="masthead">
-   <ul class="nav nav-pills pull-right">
-        <!--<li><h1 class="heading">FUSION FITNESS</h1></li>-->
-           <li><a href="/">HOME</a></li>
-           <li><a href="/blog/">BLOG</a></li>
-           <li><a href="/membership/">MEMBERSHIP</a></li>
+<div class="container navbar">
+    <div class="masthead">
+        <ul class="nav nav-pills pull-right">
+            <li><a href="/">HOME</a></li>
+            <li><a href="/blog/">BLOG</a></li>
+            <li><a href="/membership/">MEMBERSHIP</a></li>
             {% if user.is_authenticated %}
                 <li><a href="{% url 'logout' %}">LOG OUT</a></li>
             {% else %}
@@ -35,28 +35,27 @@
                 <li><a href="{% url 'login' %}">LOG IN</a></li>
 
             {% endif %}
-       {% if user.is_authenticated %}
-    <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
-{% endif %}
+            {% if user.is_authenticated %}
+                <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
+            {% endif %}
 
         </ul>
-   </div>
     </div>
+</div>
 
-    {% if messages %}
-        <div class="alert alert-success">
-            <div class="messages">
-                {% for message in messages %}
-                    {{ message }}
-                {% endfor %}
-            </div>
+{% if messages %}
+    <div class="alert alert-success">
+        <div class="messages">
+            {% for message in messages %}
+                {{ message }}
+            {% endfor %}
         </div>
-    {% endif %}
+    </div>
+{% endif %}
 
 
-            {% block content %}
-            {% endblock %}
-
+{% block content %}
+{% endblock %}
 
 
 </body>

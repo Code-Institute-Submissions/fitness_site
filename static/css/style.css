@@ -1,6 +1,4 @@
-/*Navigation*/
-
-/* NAVIGATION AND HEADING */
+/*NAVIGATION AND HEADING*/
 
 .navbar {
     position: fixed;
@@ -8,7 +6,7 @@
     z-index: 100;
     border: none;
     width: 100%;
-    background-color: black;
+    background-color: transparent;
 
 }
 
@@ -33,10 +31,6 @@ li {
     opacity: 1;
     border: 0;
     padding-right: 100px;
-    animation-duration: 5s;
-    animation-name: explode;
-    animation-timing-function: ease;
-    animation-fill-mode: forwards;
     text-transform: uppercase;
     float: left;
 
@@ -84,7 +78,7 @@ body {
 
     50% {
         opacity: 1;
-        color: darkgrayy;
+        color: darkgray;
     }
     100% {
         font-size: 4em;
@@ -109,8 +103,6 @@ body {
 .fusion {
     color: paleturquoise;
     opacity: 0.6;
-
-
 }
 
 .nav > li > a:hover, .nav > li > a:focus {
@@ -120,25 +112,18 @@ body {
 /*jumbotron*/
 
 .jumbotron {
-    margin: 0;
-    border: 0;
-    padding: 0;
-    height: 700px;
+    margin: 0 auto;
+    background-size: cover;
+    height: auto;
+    background-image: url('/static/css/weights.jpg');
+    width: 100%;
 }
 
 .jumb-header {
-    padding: 250px;
+    padding: 250px 250px 250px 80px;
     color: paleturquoise;
     font-family: 'Noto Sans', sans-serif;
     font-weight: lighter;
-
-}
-
-#site-header-img {
-background-image: url('/static/css/weights.jpg');
-max-width: 100%;
-height: auto;
-margin: 0 auto;
 }
 
 h3 {
@@ -150,25 +135,23 @@ html body {
     padding: 0;
     font-family: font-family: 'Noto Sans', sans-serif;
     font-weight: 200;
-
 }
 
 .header {
     width: 100%;
     margin: 0;
     padding: 0;
-
 }
 
 /* First Div*/
 
-.row {
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
+.flex-row {
     display: flex;
-    flex: 1 1 auto;
+    flex-wrap: wrap;
+}
+
+.flex-row.row > [class*='col-'] {
+    flex-direction: column;
 }
 
 .signup {
@@ -176,21 +159,18 @@ html body {
     background-color: white;
     color: darkslategrey;
     text-align: center;
-
 }
 
 .signup1 {
 
     background-color: white;
     text-align: center;
-
 }
 
 .signup2 {
 
     background-color: paleturquoise;
     text-align: center;
-
 }
 
 /* Second Div*/
@@ -199,7 +179,6 @@ html body {
     padding: 10px;
     background-color: black;
     color: white;
-
 }
 
 .sidebar1 {
@@ -214,7 +193,7 @@ html body {
     color: grey;
 }
 
-/* Third Div */
+/*Third Div*/
 
 .container {
     padding: none;
@@ -230,13 +209,11 @@ html body {
 .equip-image {
     padding-right: 0px;
     padding-left: 0px;
-
 }
 
 .instruct-image {
     padding-right: 0px;
     padding-left: 0px;
-
 }
 
 .footer-social {
@@ -244,15 +221,17 @@ html body {
     font-family: 'Noto Sans', sans-serif;
     font-size: 8px;
     color: gray;
-    padding: 10px;
+    width: 100%;
 }
 
 .fusion-footer {
-    color: blacl;
+
+    background-color: whitesmoke;
+    color: black;
     font-size: 10px;
     text-align: center;
-    padding: 15px;
     font-weight: 100;
+    padding: 10px;
 }
 
 .contact-footer {
@@ -261,13 +240,11 @@ html body {
     font-size: 12px;
     text-align: center;
     padding: 15px;
-
 }
 
 .box {
     font-size: 10px;
     text-align: center;
-
 }
 
 .box:hover {
@@ -276,7 +253,7 @@ html body {
     transition: 10s, ease-in-out;
 }
 
-/* Membership Page */
+/*Membership Page*/
 .membership-box {
     border: 1px solid paleturquoise;
     margin: 20px 20px 20px 20px;
@@ -294,7 +271,6 @@ html body {
     color: #e6e6e6;
     font-weight: 100;
     padding: 60px;
-
 }
 
 .product-head {
@@ -312,7 +288,6 @@ html body {
     font-size: 100px;
     color: paleturquoise;
     font-weight: 100;
-
 }
 
 .button-login {
@@ -329,7 +304,6 @@ html body {
 /*login and register */
 .about-img {
     width: 100%;
-
 }
 
 .about-img img {
@@ -341,7 +315,8 @@ html body {
 .form-container {
     width: 100%;
     position: fixed;
-    left: 210px;
+    float: left;
+    right: 210px;
     top: 5px;
     z-index: 200;
     text-align: center;
@@ -352,7 +327,7 @@ html body {
     display: none;
 }
 
-/* Modal */
+/*Modal*/
 
 .modal {
     display: none; /* Hidden by default */
@@ -363,8 +338,8 @@ html body {
     width: 100%; /* Full width */
     height: 100%; /* Full height */
     overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    background-color: rgb(0, 0, 0); /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
 }
 
 /* Modal Content/Box */
@@ -376,7 +351,7 @@ html body {
     width: 80%; /* Could be more or less, depending on screen size */
 }
 
-/* The Close Button */
+/*The Close Button*/
 .close {
     color: #aaa;
     float: right;
@@ -391,14 +366,15 @@ html body {
     cursor: pointer;
 }
 
-.red-box{
+.red-box {
     background-color: paleturquoise;
-    height: 60px;
-
+    height: auto;
+    width: auto;
 }
 
-.grey-box{
+.grey-box {
     background-color: grey;
-    height: 60px;
+    height: auto;
+    width: auto;
 
 }

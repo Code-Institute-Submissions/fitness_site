@@ -2,20 +2,20 @@
 {% load bootstrap_tags %}
 {% block content %}
 
-<div class="about-img">
-    <img src="/static/css/manmuscle.jpg" alt="man" height="600px" width="100%">
+    <div class="about-img">
+        <img src="/static/css/scott-webb.jpg" alt="side-woman" height="600px" width="100%">
 
 
-            <div class="form-container">
-    <form role="form" method="post" action="{% url 'login' %}">
-        {% csrf_token %}
-        {{ form| as_bootstrap }}
-        <div class="form-group">
-            <button type="submit" class="btn btn-primary">Login</button>
+        <div class="form-container">
+            <form role="form" method="post" action="{% url 'login' %}">
+                {% csrf_token %}
+                {{ form| as_bootstrap }}
+                <div class="form-group">
+                    <button type="submit" class="btn btn-primary">Login</button>
+                </div>
+
+            </form>
         </div>
 
-    </form>
-            </div>
-
-</div>
+    </div>
 {% endblock %}

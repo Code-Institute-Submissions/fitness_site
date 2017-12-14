@@ -1,11 +1,9 @@
 from django.contrib import messages, auth
-from django.contrib.auth.decorators import login_required
 from accounts.forms import UserRegistrationForm, UserLoginForm
 from django.core.urlresolvers import reverse
 from django.shortcuts import render, redirect
 from django.template.context_processors import csrf
 from django.conf import settings
-import datetime
 import stripe
 
 stripe.api_key = settings.STRIPE_SECRET
@@ -76,4 +74,3 @@ def logout(request):
     messages.success(request, 'You have successfully logged out')
     return redirect('/')
 
-# Create your views here.

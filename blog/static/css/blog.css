@@ -13,7 +13,6 @@ body{
     opacity: 0.5;
     font-size: 13px;
     padding: 20px 20px 10px 20px;
-
 }
 
 .save {
@@ -28,7 +27,6 @@ body{
 }
 
 .post {
-
     padding: 30px;
     margin: 40px;
 }
@@ -64,10 +62,7 @@ body{
     left: 0;
     right: 0;
     bottom: 0;
-
-
 }
-
 
 .blog-img{
     position: absolute;
@@ -76,11 +71,10 @@ body{
     left: 0;
     right: 0;
     bottom: 0;
-
 }
 
 .blog-detail-img{
-width: 50%;
+    width: 50%;
 }
 
 .post{
@@ -102,8 +96,8 @@ width: 50%;
 .blog-container{
     padding: 100px;
 }
+
 .text-detail{
     padding: 0 20px 40px 40px;
     color: ghostwhite;
-
 }
