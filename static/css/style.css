@@ -302,17 +302,17 @@ html body {
 }
 
 /*login and register */
-.about-img {
-    width: 100%;
-}
 
 .about-img img {
     width: 100%;
     border: none;
-    margin: none;
+    margin: 0 none;
+    height: auto;
+    background-size: cover;
 }
 
 .form-container {
+
     width: 100%;
     position: fixed;
     float: left;
@@ -322,6 +322,7 @@ html body {
     text-align: center;
     color: white;
 }
+
 
 .alert-success {
     display: none;
@@ -369,12 +370,11 @@ html body {
 .red-box {
     background-color: paleturquoise;
     height: auto;
-    width: auto;
+    width: 200px;
 }
 
 .grey-box {
     background-color: grey;
     height: auto;
-    width: auto;
-
+    width: 200px;
 }
