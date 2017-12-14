@@ -26,10 +26,6 @@ body{
     font-family: 'raleway', 'sans-serif';
 }
 
-.post {
-    padding: 30px;
-    margin: 40px;
-}
 
 
 .post h1 a, .post h1 a:visited {
@@ -56,12 +52,11 @@ body{
 }
 
 .form-group{
-    width: 400px;
+    width: 300px;
     margin: auto;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
+    padding-left: 50px;
+
+
 }
 
 .blog-img{
@@ -94,7 +89,7 @@ body{
 }
 
 .blog-container{
-    padding: 100px;
+    padding: 80px;
 }
 
 .text-detail{
