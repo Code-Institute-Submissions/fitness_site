@@ -28,9 +28,8 @@ This website uses Django as a framework and is styled using Bootstrap.
  is used to manage front-end components
 - [JavaScript](https://javascript.com/)
  is used for interactivity
-
-## Testing
+- Pencil for Wireframes
 
 ## Extras
 
-Given more time on this project, I would style the stripe payment section and create the option for users to directly call instructors when logging in via mobile.
+Given more time on this project, I would style the stripe payment section and create the option for users to directly call instructors when logging in via mobile. I would also test the views more extensively.

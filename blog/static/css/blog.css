@@ -47,14 +47,14 @@ body{
 }
 
 .form-container{
-    margin-top: 100px;
+    margin-top: 20px;
     padding: 200px;
 }
 
 .form-group{
     width: 300px;
     margin: auto;
-    padding-left: 50px;
+    padding-left: 100px;
 
 
 }
